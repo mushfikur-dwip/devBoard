@@ -1,26 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Board</title>
     <link rel="stylesheet" href="./styles/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        @theme {
+                    --font-poppin: "Poppins", sans-serif;
+                }
+            </style>
 
 </head>
 
-<body>
+<body class="font-poppin bg-[#F4F7FF] h-[100vh]">
     <!-- Header -->
-    <header>
-        <div class="flex items-center gap-2">
-            <img src="./assets/logo.png" alt="Dev Board">
-            <p class="text-[30px] font">Dev<span class="font-bold " >Board</span></p>
-        </div>
-    </header>
+    <main class="mx-[140px]">
 
+        <header class="bg-white rounded-xl ">
+            <nav class=" mx-4 p-6 flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <img src="./assets/logo.png" alt="DevBoard Logo" class="w-8 h-8">
+                    <span class="text-lg font-bold text-gray-800">Dev<span class="text-black">Board</span></span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center bg-gray-200 px-3 py-1 rounded-full">
+                        <input type="checkbox" checked class="form-checkbox text-blue-500">
+                        <span class="ml-2 font-semibold text-black">23</span>
+                    </div>
+                    <button class="w-8 h-8 rounded-full bg-red-50"></button>
+                </div>
+            </nav>
+
+        </header>
+
+    </main>
 
     <script src="./js/app.js"></script>
 </body>
