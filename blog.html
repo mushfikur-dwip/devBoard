@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        @theme {
+                    --font-poppin: "Poppins", sans-serif;
+                }
+            </style>
+
+</head>
+
+<body class="font-poppin bg-[#F4F7FF] h-auto pb-10">
+    <!-- Header -->
+    <main class="pt-8 mx-[140px]">
+        <header class="bg-white rounded-xl ">
+            <nav class=" mx-4 p-6 flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <img src="./assets/logo.png" alt="DevBoard Logo" class="w-8 h-8">
+                    <span class="text-lg font-bold text-gray-800">Dev<span class="text-black">Board</span></span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button id="back-btn" class="btn bg-[#F4F7FF]" >
+                        Back
+                    </button>
+                </div>
+            </nav>
+
+        </header>
+
+        <h1 class="text-center font-semibold text-[32px]">Blogs</h1>
+        <section class="flex flex-col gap-5">
+            <div class="bg-white p-5 rounded-lg">
+                <p class="font-bold text-lg py-2">Question-1: What are the different ways to select an element in the
+                    DOM?
+                </p>
+                <hr class="border-dashed">
+                <p class="text-lg pt-2">getElementByID, getElementsByClass, querySelector, closetSet,
+                    getElementsByTagName, querySelectorAll </p>
+            </div>
+            <div class="bg-white p-5 rounded-lg ">
+                <p class="font-bold text-lg py-2">Question-2: What is the difference between innerHTML, innerText, and
+                    textContent ?
+                </p>
+                <hr class="border-dashed">
+                <p class="text-lg pt-2">
+                    innerHTML = It give the full text/contents with tags <br>
+                    innetText = It gives the only text/contents without any tag but it can access the css styles. <br>
+                    textContent = It gives the only plain text. NO HTML tags or any css styles.
+                </p>
+            </div>
+            <div class="bg-white p-5 rounded-lg ">
+                <p class="font-bold text-lg py-2">QQuestion-3: What is event delegation in the DOM?</p>
+                <hr class="border-dashed">
+                <p class="text-lg pt-2">
+                    Event delegation is a way of handling events more effectively. Without adding event listeners to many child elements, we can add one event listener to parent element. When we click on a child element, the event goes up to the parent. It is more faster process and it works even when new child elements are added later.
+                </p>
+            </div>
+            <div class="bg-white p-5 rounded-lg ">
+                <p class="font-bold text-lg py-2">Question-4: What is event bubbling in the DOM?</p>
+                <hr class="border-dashed">
+                <p class="text-lg pt-2">
+                    Event bubbling is a process when an event starts from the clicked element and moves up through its parent elements one by one, until it reaches the top
+                </p>
+            </div>
+            <div class="bg-white p-5 rounded-lg ">
+                <p class="font-bold text-lg py-2">Question-5: How do you create, add, and remove elements using
+                    JavaScript?</p>
+                <hr class="border-dashed">
+                <p class="text-lg pt-2">
+                For create we use document.createElement <br>
+                for add we use appendChild() <br>
+                for remove we use remove() <br>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/blog.js"></script>
+</body>
+
+</html>
