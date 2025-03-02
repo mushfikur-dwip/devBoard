@@ -37,9 +37,9 @@
                 <div class="flex items-center space-x-4">
                     <div class="flex items-center bg-gray-200 px-3 py-1 rounded-full">
                         <input type="checkbox" checked class="form-checkbox text-blue-500">
-                        <span class="ml-2 font-semibold text-black">23</span>
+                        <span id="total-task" class="ml-2 font-semibold text-black">23</span>
                     </div>
-                    <button class="w-8 h-8 rounded-full bg-red-50"></button>
+                    <button class="w-8 h-8 rounded-full bg-red-50" onclick="changeButtonColor()"></button>
                 </div>
             </nav>
 
@@ -61,7 +61,7 @@
                             </div>
                             <div class="text-lg">
                                 <p>Task Assigned</p>
-                                <span class="font-bold">05</span>
+                                <span id="taks-count" class="font-bold">6</span>
                             </div>
                         </div>
                         <div id="blog"
@@ -90,7 +90,7 @@
                         <div class="card bg-base-100  shadow-sm bg-[#F4F7FF]">
                             <div class="card-body">
                                 <button class="bg-white w-[124px] rounded-lg py-2 px-4">ShopEase</button>
-                                <h2 class="card-title">Fix Mobile Button Issue </h2>
+                                <h2 class="card-title">Fix Mobile Issue </h2>
                                 <div class="bg-white p-4 rounded-lg">
                                     <p>Debug using Chrome DevTools, check for overlapping...</p>
                                 </div>
@@ -100,7 +100,7 @@
                                         <span>Deadline</span>
                                         <p>21 March 2025</p>
                                     </div>
-                                    <button class="btn bg-[#3752FD] hover:bg-[#3752FD]  text-white ">Completed</button>
+                                    <button class="complete-btn  btn bg-[#3752FD] hover:bg-[#3752FD]  text-white ">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -117,7 +117,7 @@
                                         <span>Deadline</span>
                                         <p>21 March 2025</p>
                                     </div>
-                                    <button class="btn bg-[#3752FD] hover:bg-[#3752FD] text-white ">Completed</button>
+                                    <button class="complete-btn btn bg-[#3752FD] hover:bg-[#3752FD] text-white ">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +134,7 @@
                                         <span>Deadline</span>
                                         <p>21 March 2025</p>
                                     </div>
-                                    <button class="btn bg-[#3752FD] hover:bg-[#3752FD] text-white ">Completed</button>
+                                    <button class="complete-btn btn bg-[#3752FD] hover:bg-[#3752FD] text-white ">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -151,7 +151,7 @@
                                         <span>Deadline</span>
                                         <p>21 March 2025</p>
                                     </div>
-                                    <button class="btn bg-[#3752FD] hover:bg-[#3752FD] text-white ">Completed</button>
+                                    <button class="complete-btn btn bg-[#3752FD] hover:bg-[#3752FD] text-white ">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -168,7 +168,7 @@
                                         <span>Deadline</span>
                                         <p>21 March 2025</p>
                                     </div>
-                                    <button class="btn bg-[#3752FD] hover:bg-[#3752FD] text-white ">Completed</button>
+                                    <button class="complete-btn btn bg-[#3752FD] hover:bg-[#3752FD] text-white ">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -185,7 +185,7 @@
                                         <span>Deadline</span>
                                         <p>21 March 2025</p>
                                     </div>
-                                    <button class="btn bg-[#3752FD] hover:bg-[#3752FD] text-white ">Completed</button>
+                                    <button class="complete-btn btn bg-[#3752FD] hover:bg-[#3752FD] text-white ">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -201,13 +201,11 @@
                         <img src="./assets/activity.png" alt="Activities">
                         <p class="font-medium">Activity Logs</p>
                     </div>
-                    <button class="btn bg-[#3752FD] hover:bg-[#3752FD] text-white ">Clear History</button>
+                    <button class="clear-history btn bg-[#3752FD] hover:bg-[#3752FD] text-white ">Clear History</button>
                 </div>
                 <hr class="border-dashed">
-                <div>
-                    <div class="bg-[#F4F7FF] m-4 p-3 rounded-lg">
-                        <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-                    </div>
+                <div class="activity-log-container">
+
                 </div>
             </div>
         </section>
